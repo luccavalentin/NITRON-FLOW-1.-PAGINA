@@ -149,10 +149,10 @@ export default function Hero() {
                       if (typeof window === 'undefined') return
                       
                       requestAnimationFrame(() => {
-                        const tagline = document.getElementById('tagline-text')
-                        const gradientText = document.getElementById('gradient-text')
-                        const heroParagraph = document.querySelector('.hero-text p')
-                        const heroBtns = document.querySelector('.hero-btns')
+                        const tagline = document.getElementById('tagline-text') as HTMLElement | null
+                        const gradientText = document.getElementById('gradient-text') as HTMLElement | null
+                        const heroParagraph = document.querySelector('.hero-text p') as HTMLElement | null
+                        const heroBtns = document.querySelector('.hero-btns') as HTMLElement | null
                         
                         // Mostrar tagline primeiro
                         if (tagline) {
